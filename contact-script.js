@@ -42,3 +42,9 @@ c.addEventListener('click', _ =>{
 d.addEventListener('click', _ =>{
 	document.documentElement.style.setProperty(colorvar,'rgb(10, 105, 115)')
 })
+
+
+const handleClick = (e) =>{
+  e.preventDefault();
+  window.open('mailto:${email}?subject=${subject}&body=${name}:${message}');
+}
